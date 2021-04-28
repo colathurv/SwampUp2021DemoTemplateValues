@@ -1,0 +1,23 @@
+GitRepo:
+  name : demo_be_gitRepo
+  path : colathurv/SwampUp2021
+  files:
+    include : ^SUV-204-CI-CD-Deep-Dive\:JFrog-Pipelines/java-backend/.*$
+BuildInfo:
+  name : demo_be_build_info
+  buildName : backend_build
+ArtifactoryInt : ARTFY_INT
+GitProviderInt : GITHUB_INT
+affinityGroup: bldGroup
+Pipelines:
+  name: swamup2021_demo_template_pipeline
+MvnBuild :
+  name: bld_backend
+  sourceLocation : SUV-204-CI-CD-Deep-Dive:JFrog-Pipelines/java-backend
+DockerBuild:
+  name: bld_docker_image
+  dockerFileLocation: SUV-204-CI-CD-Deep-Dive:JFrog-Pipelines/docker
+  dockerFileName : BE-Dockerfile
+  dockerImageName: vjnpipelines.jfrog.io/docker-demo-local/app-backend
+DockerPush:
+  name: Name of the DockerPush Step
