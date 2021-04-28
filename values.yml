@@ -7,8 +7,8 @@ BuildInfo:
 ArtifactoryInt: ARTFY_INT
 GitProviderInt: GITHUB_INT
 affinityGroup: bldGroup
-Pipelines:
-  name: swamup2021_demo_template_pipeline
+Pipeline:
+  name: swampup2021_demo_template_pipeline
 MvnBuild :
   name: bld_backend
   sourceLocation: SUV-204-CI-CD-Deep-Dive:JFrog-Pipelines/java-backend
