@@ -20,4 +20,4 @@ DockerBuild:
   dockerFileName: BE-Dockerfile
   dockerImageName: vjnpipelines.jfrog.io/docker-demo-local/app-backend
 DockerPush:
-  name: Name of the DockerPush Step
+  name: demo_be_build_info
