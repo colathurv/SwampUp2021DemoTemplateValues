@@ -1,8 +1,6 @@
 GitRepo:
   name: demo_be_gitRepo
   path: colathurv/SwampUp2021
-  files:
-    include : ^SUV-204-CI-CD-Deep-Dive\:JFrog-Pipelines/java-backend/.*$
 BuildInfo:
   name: demo_be_build_info
   buildName: backend_build
