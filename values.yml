@@ -18,4 +18,4 @@ DockerBuild:
   dockerFileName: BE-Dockerfile
   dockerImageName: vjnpipelines.jfrog.io/docker-demo-local/app-backend
 DockerPush:
-  name: demo_be_build_info
+  name: push_docker_image
